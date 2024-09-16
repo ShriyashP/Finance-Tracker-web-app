@@ -1,4 +1,10 @@
+"use client";
+
 import './globals.css'
+import Nav from '@/components/navigation';
+
+import FinanceContextProvider from '@/lib/store/finance-context';
+import AuthContextProvider from '@/lib/store/auth-contex';
 
 export default function RootLayout({ children }) {
   return (
@@ -8,7 +14,14 @@ export default function RootLayout({ children }) {
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+      <body>
+        <AuthContextProvider>
+          <FinanceContextProvider>
+            <Nav/>
+            {children}
+          </FinanceContextProvider>
+        </AuthContextProvider>
+      </body>
     </html>
   )
 }
