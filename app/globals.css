@@ -8,7 +8,7 @@
     }
 
     body{
-        @apply bg-gradient-to-r from-[#6a5acd] to-[#778899] text-white relative;
+        @apply bg-gradient-to-r from-[#30226d] to-[#913fc9] text-white relative;
     }
 
     button{

@@ -21,7 +21,7 @@ function SignIn() {
             </div>
             <div className="px-4 py-4"> 
                 <h3 className="mb-3 text-2xl text-center text-gray-900 ">Please sign in to continue</h3>
-                <button onClick={ googleLoginHandler } className="flex items-center gap-2 p-4 mx-auto mt-6 bg-slate-900 text-white font-semibold rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50">
+                <button onClick={googleLoginHandler} className="flex items-center gap-2 p-4 mx-auto mt-6 bg-slate-900 text-white font-semibold rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50">
                     <FcGoogle className="text-2xl" />
                     Google
                 </button>
