@@ -1,50 +1,97 @@
-# **Finance Tracker Application**
+# AI Finance Tracker
 
-## **Overview:**
-The Finance Tracker Application is a production-ready web app designed to manage and track financial transactions securely. Leveraging Next.js 13, Tailwind CSS, and Firebase, this app provides a comprehensive solution for expense tracking and financial management.
+**Live Project:** [View Live on Vercel]([https://your-vercel-project-link.vercel.app](https://finance-tracker-web-app.vercel.app/))
 
-## **Features**
-    - User Authentication: Secure user data with Firebase Auth, ensuring only authorized access to personal financial information and protected routes.
+A modern personal finance tracker that combines real-time expense management with AI-powered insights — built using **Next.js 13**, **Tailwind CSS**, **Firebase**, and an embedded **RAG chatbot** via Chatling AI.
 
-    - Real-Time Data Storage: Utilize Firebase Firestore for scalable, real-time data storage and retrieval.
+---
 
-    
-    - Dynamic Expense Management: Manage and categorize expenses efficiently with currency formatting.
-    
-    - Chart Visualizations: Visualize financial data using interactive charts created with Chart.js.
-    
-    - Reusable Modals: Enhance user experience with modal components for managing income and expenses.
-    
-    - State Management: Centralize state management across the application using React Context API.
-    
-    - Modern UI/UX: Enjoy a responsive, visually appealing design powered by Tailwind CSS, featuring custom buttons, animations, and layout components.
-    
-    - User Notifications: Receive real-time feedback on user actions (e.g., adding or deleting expenses) via Toastify notifications.
+## Overview
 
-## **Tech Stack**
-- Frontend: 
-    - Next.js 13: A React framework for server-side rendered and static websites.
-    - Tailwind CSS: A utility-first CSS framework for creating custom designs quickly.
-    - Chart.js: A JavaScript library for interactive charts and visualizations.
+AI Finance Tracker helps users monitor income, expenses, and savings in a sleek dashboard, while a built-in chatbot answers natural language questions using context from a curated knowledge base.
 
-- Backend:
-    - Firebase: A platform for web and mobile applications offering various services.
-        - Firebase Auth: Manages user authentication and security.
-        - Firebase Firestore: Provides real-time NoSQL database storage and retrieval.
+---
 
+##  Features
 
-- State Management:
-    - React Context API: Manages and passes state throughout the application.
+-  **User Authentication**: Secured with Firebase Auth to protect financial data
+-  **Real-Time Database**: Uses Firestore to store and fetch expense data instantly
+-  **Transaction Management**: Add, edit, and categorize income/expenses
+-  **Chart Visualizations**: Dynamic insights powered by Chart.js
+-  **Global State Management**: Built with React Context API
+-  **AI Chatbot (RAG)**: Chatling AI chatbot answers financial questions using a knowledge base
+-  **Toast Notifications**: Real-time feedback on user actions
+-  **Modern UI**: Built with Tailwind CSS and responsive components
 
+---
 
-- Notifications:
-    - Toastify: Displays toast notifications to provide user feedback.
+##  AI Chatbot Integration (RAG with Chatling AI)
 
+To make the app smarter, a no-code RAG-style chatbot was integrated using Chatling AI:
 
-- Development Tools:
-    - Git: Version control system for tracking changes and collaboration.
-    - npm: Package manager for JavaScript dependencies.
-    - Vercel (Optional): Deployment platform for Next.js applications.
+### RAG Architecture Breakdown
 
-## **License**
-This project is licensed under the MIT License. See the LICENSE file for details.
+| Step | Action |
+|------|--------|
+| 1 | Uploaded finance docs or generated Q&A-style knowledge base |
+| 2 | Captured user queries using a text input block |
+| 3 | Retrieved relevant content from the KB |
+| 4 | Generated contextual response using an LLM |
+| 5 | Looped conversation for natural back-and-forth |
+
+> Example queries: "How much did I spend on food last month?" or "What's my biggest spending category?"
+
+---
+
+## Tech Stack
+
+### Frontend
+- Next.js 13
+- React
+- Tailwind CSS
+- Chart.js
+
+### Backend
+- Firebase Auth
+- Firebase Firestore
+
+### AI Layer
+- Chatling AI (RAG Chatbot)
+- OpenAI (via Chatling)
+- Optional: FAISS for vector storage
+
+### Tooling
+- React Context API (state management)
+- Toastify (notifications)
+- Git + GitHub
+- Vercel (deployment)
+
+---
+
+## 🛠️ Getting Started
+
+```bash
+git clone https://github.com/your-username/ai-finance-tracker.git
+cd ai-finance-tracker
+npm install
+npm run dev
+```
+
+### Create `.env.local`
+
+```env
+NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=1234567890
+NEXT_PUBLIC_FIREBASE_APP_ID=1:1234567890:web:abcdefghijk
+```
+
+Add `OPENAI_API_KEY` if needed.
+
+---
+
+## License
+
+MIT License — 2025
