@@ -1,6 +1,7 @@
 # AI Finance Tracker
 
-**Live Project:** [View Live on Vercel]([https://your-vercel-project-link.vercel.app](https://finance-tracker-web-app.vercel.app/))
+**Live Project:** [View Live on Vercel](https://finance-tracker-web-app.vercel.app/)
+
 
 A modern personal finance tracker that combines real-time expense management with AI-powered insights — built using **Next.js 13**, **Tailwind CSS**, **Firebase**, and an embedded **RAG chatbot** via Chatling AI.
 
